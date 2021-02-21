@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="editTodo">
   <h2>Edit Todo List</h2>
-  <form @submit.prevent="editingTodo">
+  <form>
     <div class="form-group">
       <label for="title">Title</label>
       <input class="form-control" type="text" id="title" placeholder="Enter title">

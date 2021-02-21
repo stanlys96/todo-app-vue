@@ -1,7 +1,7 @@
 <template>
   <div id="todo">
     <h2>To Do Lists</h2>
-    <router-link :to="{ name: 'AddTodoPage' }" class="btn btn-primary mt-2"><i class="fas fa-plus-square mr-2"></i> Add Todo List</router-link>
+    <router-link class="btn btn-primary mt-2"><i class="fas fa-plus-square mr-2"></i> Add Todo List</router-link>
     <div class="container" id="lists">
       <div class="row">
         <div class="card-col">
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import Card from '../components/Card'
 export default {
   components: {
     Card
