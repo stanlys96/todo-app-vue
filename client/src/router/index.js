@@ -10,38 +10,6 @@ import EditTodo from '../views/editTodo.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'HomePage',
-    component: Home,
-    children: [
-      {
-        path: '/register',
-        name: 'RegisterPage',
-        component: Register
-      },
-      {
-        path: '/login',
-        name: 'LoginPage',
-        component: Login
-      }
-    ]
-  },
-  {
-    path: '/todo',
-    name: 'TodoPage',
-    component: Todo
-  },
-  {
-    path: '/addTodo',
-    name: 'AddTodoPage',
-    component: AddTodo
-  },
-  {
-    path: '/editTodo',
-    name: 'EditTodoPage',
-    component: EditTodo
-  }
 ]
 
 const router = new VueRouter({

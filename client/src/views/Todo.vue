@@ -5,7 +5,6 @@
     <div class="container" id="lists">
       <div class="row">
         <div class="card-col">
-          <Card v-for="(list, index) in getLists" :key="index" :list="list"></Card>
         </div>
       </div>
     </div>
@@ -19,12 +18,8 @@ export default {
     Card
   },
   created: function () {
-    this.$store.dispatch('getLists')
   },
   computed: {
-    getLists () {
-      return this.$store.state.lists
-    }
   }
 }
 </script>

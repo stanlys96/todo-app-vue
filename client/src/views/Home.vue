@@ -2,7 +2,7 @@
   <div id="login-register">
     <div id="content" class="container">
       <nav>
-        <a @click.prevent="changingPage('register')" href="#" :class="this.$store.state.page === 'register' ? 'bg-dark text-light' : ''">Register</a> | <a @click.prevent="changingPage('login')" href="#" :class="this.$store.state.page === 'login' ? 'bg-dark text-light' : ''">Login</a>
+        <a>Register</a> | <a>Login</a>
         <router-view />
       </nav>
     </div>
@@ -11,13 +11,6 @@
 
 <script>
 export default {
-  methods: {
-    changingPage (value) {
-      this.$store.dispatch('changePage', {
-        page: value
-      })
-    }
-  }
 }
 </script>
 
